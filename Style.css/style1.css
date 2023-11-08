@@ -2,16 +2,96 @@
     margin: 0px;
     padding: 0px;
 }
-header{
-    border: 1px solid #a3a2a3;
-    height: 1200px;
-    width: 400px;
+.logoHeader{
+   text-align: left;
+}
+.navigation{
+    text-align: right;
+}
+#navigate a{
+    color: red;
+    font-weight: bold;
+}
+.nav-input{
+    float: right;
 }
 
 nav{
-    clear: both;
+    clear:both;
+    padding: 10px;
+    background-color: rgb(192, 241, 233);
 }
+
+
+#body{
+    clear: both;
+    background-color: #EEEAE9;
+}
+aside#left, aside#right, section {
+    display: table-cell;
+    vertical-align: top;
+}
+aside#left{
+       width:20%;
+    }
+ aside#right{
+    margin: 10px;
+     width: 20%;
+     border: 1px solid blue;
+         }
+ h3{
+    text-align: center;
+    background-color: #1F69B4;
+    color: white;
+ }
+ ul{
+    border: 1px solid blue   ;
+ }
+img {
+   width: 25%;
+   height: 25%;
+ }
+ .bill{
+    font-weight: bold;
+ }
+ .price{
+     color: red;
+ }
+ .flexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+
+ section .buttonbuy{
+    width: 30px;
+    height: 20px;
+ }
+ .photo{
+    width: 50px;
+    height: 60px;
+ }
+ .photo:hover{
+    transform: scale(1.1);
+ }
+ .namebook:hover{
+    font-style:italic;
+ }
+section .product-box{
+    margin: 5px;
+    width: 30%;
+    height: 50%;
+    border: 1px;
+    border-color: greenyellow;
+    border-style: dotted;
+    background-color: #C8E5F3 ;
+    text-align: center;
+ }
+ footer{
+    text-align: center;
+    background-color: rgb(125, 236, 151);
+ }
+ ul{
+    background-color:  white;
+ }
  
-
-
-

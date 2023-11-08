@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="D:\web\lab_3\Style.css\style1.css">
+        <link rel="stylesheet" href="D:\web\LAB3_DEMO\Style.css\style1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -11,26 +11,27 @@
             </div>
             <div class="navigation">
                             <i class="fa fa-user fa-1x" aria-hidden="true"><a href="D:\web\Lab2_LAB406.B11\login.html">login|</a></i>
-                            <a href="Registration.html">Registration</a>
+                            <a href="D:\web\LAB3_DEMO\html\HomepageRegister.html">Registration</a>
                            <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true"><a href="#">Cart</a></i>
             </div>
         </header>
         <nav>
-            <div>
+            <div class="nav-input">
                 <input type="search" placeholder="Enter the title of the book...">
                 <input type="submit" name="submitButton" id="submitButton_id">
             </div>
-    <div>
-        <ul name="navigation" type="filling">
-            <li><a href="D:\web\10_18_2023_CSE307\p4.html">Home Page</a></li>
-            <li><a href="Homepage.html">Introduction</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
+    <div id="navigate">
+        
+          <Label><a href="D:\web\10_18_2023_CSE307\p4.html">Home Page</a> |
+            <a href="Homepage.html">Introduction</a> |
+            <a href="#">contact</a></Label>  
+        
     </div>
         </nav>
-        <div><!-- Rules on the body of the page-->
+
+        <div id="body"><!-- Rules on the body of the page-->
             <article>
-                <aside>
+                <aside id="left">
                     <h3><strong>SÁCH THEO CHỦ ĐỀ</strong></h3>
                     <ul type="square">
                     <li><a href="#"><span style="color: blue;"><u>Ngoại ngữ</u></span></a></li>
@@ -53,17 +54,49 @@
                     <li><a href="#"><span style="color: blue;"><u>Văn hóa</u></span></a></li>
                     <li><a href="#"><span style="color: blue;"><u>Lao động-Xã hội</u></span></a></li>
                     <li><a href="#"><span style="color: blue;"><u>Khoa Học & Kỹ Thuật</u></span></a></li>
-            
                 </ul>
                 </aside>
                 <section>
-                    <div style="text-align: center;">  <p ><span style="color: blue; font-size: 30px;">Giáo trình Tin học cơ bản</span></p>
-                        <img style="align-items: center;" src="img_Practice3/book.jpg">
-                        <p>Đơn giá: <span style="color: orange;">26.000 VNĐ</span></span></p>
-                       <a href="D:\web\Lab2_LAB406.B11\detailproduct.html"><img src="img_Practice3/buy.jpg" width="50px" height="30px"></a>  
+                    <p style="color: white; background-color: blue;" align="center">NEW BOOKS</p>
+                    <aside class="flexContainer">
+                    <div class="product-box"> 
+                         <p class="namebook">Giáo trình Tin học cơ bản</p>
+                        <img class="photo" src="img_Practice3/book.jpg" alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">126.000 VNĐ</span></p>
+                       <a href="#"><img src="img_Practice3/buy.jpg" class="buttonbuy" alt="Buy-Book"></a>  
+                    </div>
+                    <div class="product-box"> 
+                         <p class="namebook">English For Tech</p>
+                        <img class="photo" src="img_Practice3/EnglishForTech.jpg" alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">206.000 VNĐ</span></p>
+                       <a href="#"><img src="img_Practice3/buy.jpg" class="buttonbuy" alt="Buy-Book"></a>  
+                    </div>
+                    <div class="product-box"> 
+                         <p class="namebook">BARC Computer Science</p>
+                        <img class="photo" src="img_Practice3/BARC.png" alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">260.000 VNĐ</span></p>
+                       <a href="#"><img src="img_Practice3/buy.jpg" class="buttonbuy" alt="Buy-Book"></a>  
+                    </div>
+                    <div class="product-box"> 
+                         <p class="namebook">The Davinci Code</p>
+                        <img class="photo" src="img_Practice3/Davinci.png" alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">265.000 VNĐ</span></p>
+                       <a href="#"><img src="img_Practice3/buy.jpg" class="buttonbuy" alt="Buy-Book"></a>  
+                    </div>
+                    <div class="product-box"> 
+                         <p class="namebook">Harry Potter</p>
+                        <img class="photo" src="img_Practice3/harrypotter.png" alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">126.000 VNĐ</span></p>
+                       <a href="#"><img src="img_Practice3/buy.jpg" class="buttonbuy" alt="Buy-Book"></a>  
+                    </div>
+                    <div class="product-box"> 
+                         <p class="namebook">Giáo trình Tin học cơ bản</p>
+                        <img class="photo" src="img_Practice3/book.jpg" alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">126.000 VNĐ</span></p>
+                       <a href="#"><img src="img_Practice3/buy.jpg" class="buttonbuy" alt="Buy-Book"></a>  
                     </div>
                 </section>
-                <aside>
+                <aside id="right">
                     <header>
                         <h3>BESTSELLER</h3> 
                      </header>
@@ -71,27 +104,30 @@
                         <marquee direction="up" scrollamount="3"
                         scrolldelay="100"
                         onmousemove="stop()" onmouseout=" start()">
-                     <p><a href="#"><img src="img_Practice3/EnglishForTech.jpg" style="width: 500px; height: 500px;"> English For Tech</a></p>
+                     <p><a href="#"><img src="img_Practice3/EnglishForTech.jpg" > English For Tech</a></p>
                  </marquee>
                  <marquee direction="up" scrollamount="3" scrolldelay="100"
                  onmousemove="stop()" onmouseout="start()">
-                 <p><a href="#"><img src="img_Practice3/BARC.png" style="width: 500px; height: 500px;">BARC computer Science</a></p>
+                 <p><a href="#"><img src="img_Practice3/BARC.png" >BARC computer Science</a></p>
              </marquee>
              <marquee direction="up" scrollamount="3" scrolldelay="100" onmousemove="stop()"
              onmouseout="start()">
-             <p><a href="#"><img src="img_Practice3/Davinci.png"style="width: 500px; height: 500px;">The Davinci Code</a></p>
+             <p><a href="#"><img src="img_Practice3/Davinci.png">The Davinci Code</a></p>
              </marquee>
              <marquee direction="up" scrollamount="3" scrolldelay="100" onmousemove="stop()" onmouseout="start()">
-             <a href="#"><img src="img_Practice3/harrypotter.png"style="width: 500px; height: 500px;"></a></marquee>
-             <h2>THE WEBSITE LINKS</h2>
-             <select name="select linking websites">
+             <a href="#"><img src="img_Practice3/harrypotter.png"></a></marquee>
+             <h3>THE WEBSITE LINKS</h3>
+             <br>
+             <select name="select linking websites" style="height: 30px;">
                  <option selected disabled>---Select the linking page---</option>
                  <option><a href="https://lib.eiu.edu.vn" target="_blank">Eastern International University library</a></option>
                  <option><a href="https://eiu.edu.vn/" target="_blank">Eastern International University</a></option>
              </select>
-              <h2>ACCESS STATISTICS</h2>   
-             <h3>Total Accesss: 500</h3>
-             <h3>Online: 3</h3>
+             <br>
+             <br>
+              <h3>ACCESS STATISTICS</h3>   
+             <p style="color: red; background-color: aqua;">Total Accesss: 500<p>
+                <p style="color: red; background-color: aqua;">Online: 3</p>
                      </main>
                 </aside>
             </article>
